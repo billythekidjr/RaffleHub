@@ -33,7 +33,7 @@ import {
 // `window` object. This is the correct pattern for this environment.
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCwi_HE22ga-SNO-M9mkDuAHExA2tyyyb4",
+  apiKey:
   authDomain: "rafflehub-72627.firebaseapp.com",
   projectId: "rafflehub-72627",
   storageBucket: "rafflehub-72627.firebasestorage.app",
