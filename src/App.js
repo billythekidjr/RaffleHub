@@ -31,8 +31,16 @@ import {
 // SOLUTION: To fix the "Can't find variable: process" error, we must avoid using
 // `process.env`. Instead, we safely access the globally injected variables via the
 // `window` object. This is the correct pattern for this environment.
-const firebaseConfig = (window && window.__firebase_config) ? JSON.parse(window.__firebase_config) : {};
-const appId = (window && window.__app_id) || firebaseConfig.appId || 'default-app-id';
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCwi_HE22ga-SNO-M9mkDuAHExA2tyyyb4",
+  authDomain: "rafflehub-72627.firebaseapp.com",
+  projectId: "rafflehub-72627",
+  storageBucket: "rafflehub-72627.firebasestorage.app",
+  messagingSenderId: "839969572788",
+  appId: "1:839969572788:web:78ca7400ca695fa13a14e1",
+  measurementId: "G-RX424DK0XW"
+};
 
 
 // --- Initialize Firebase ---
